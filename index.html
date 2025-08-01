@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarServ - Car Repair Service Center</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .service-icon {
+      font-size: 2rem;
+      color: #dc2626;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-red-600 text-xl font-bold" href="#">CarServ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto space-x-4">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <a href="#" class="btn btn-danger ms-3">Get a Quote</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-black text-center py-20">
+    <div class="container">
+      <img src="images/hero.jpg" class="img-fluid rounded mb-4" alt="Hero Image">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Qualified Car Repair Service Center</h1>
+      <a href="#" class="btn btn-danger mt-4">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Services Highlights -->
+  <section class="py-10 bg-gray-900">
+    <div class="container grid md:grid-cols-3 gap-6 text-center">
+      <div>
+        <img src="images/quality.png" class="mx-auto mb-3 w-16 h-16" alt="Quality Servicing">
+        <h4 class="text-lg font-bold">Quality Servicing</h4>
+        <p class="text-sm text-gray-400">Reliable and efficient service.</p>
+      </div>
+      <div>
+        <img src="images/expert.png" class="mx-auto mb-3 w-16 h-16" alt="Expert Workers">
+        <h4 class="text-lg font-bold">Expert Workers</h4>
+        <p class="text-sm text-gray-400">Certified and experienced staff.</p>
+      </div>
+      <div>
+        <img src="images/equipment.png" class="mx-auto mb-3 w-16 h-16" alt="Modern Equipment">
+        <h4 class="text-lg font-bold">Modern Equipment</h4>
+        <p class="text-sm text-gray-400">Up-to-date tools and technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-black">
+    <div class="container md:flex items-center gap-8">
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-4">CarServ Is The Best Place For Your Auto Care</h2>
+        <ul class="list-disc pl-6 text-gray-400">
+          <li>15+ Years Experience</li>
+          <li>Professional & Expert Team</li>
+          <li>Award-Winning Service</li>
+        </ul>
+        <a href="#" class="btn btn-danger mt-4">Read More</a>
+      </div>
+      <div class="md:w-1/2 mt-6 md:mt-0">
+        <img src="images/about.jpg" alt="Auto Repair" class="rounded-xl w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-900">
+    <div class="container text-center">
+      <h2 class="text-3xl font-bold mb-10">Explore Our Services</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-black p-4 rounded-xl border border-gray-800">
+          <img src="images/diagnostic.png" class="mx-auto mb-2 w-12 h-12" alt="Diagnostic Test">
+          Diagnostic Test
+        </div>
+        <div class="bg-black p-4 rounded-xl border border-gray-800">
+          <img src="images/engine.png" class="mx-auto mb-2 w-12 h-12" alt="Engine Servicing">
+          Engine Servicing
+        </div>
+        <div class="bg-black p-4 rounded-xl border border-gray-800">
+          <img src="images/tires.png" class="mx-auto mb-2 w-12 h-12" alt="Tires Replacement">
+          Tires Replacement
+        </div>
+        <div class="bg-black p-4 rounded-xl border border-gray-800">
+          <img src="images/oil.png" class="mx-auto mb-2 w-12 h-12" alt="Oil Changing">
+          Oil Changing
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="contact" class="py-16 bg-black">
+    <div class="container grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Certified and Award Winning Car Repair Service Provider</h2>
+        <p class="text-gray-400">We deliver reliable and expert service using modern tools and a skilled team.</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-xl">
+        <form class="grid gap-4">
+          <input type="text" placeholder="Your Name" class="form-control">
+          <input type="email" placeholder="Your Email" class="form-control">
+          <input type="date" class="form-control">
+          <textarea placeholder="Special Request" class="form-control"></textarea>
+          <button class="btn btn-danger">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-6">
+    <div class="container text-center">
+      <p>&copy; 2025 CarServ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
