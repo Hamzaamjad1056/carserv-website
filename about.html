@@ -1,115 +1,154 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CarServ - Car Repair Service</title>
-
-  <!-- Bootstrap & Icons -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - CarServ</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      scroll-behavior: smooth;
     }
+    .hero-about {
+      background: url('carousel-bg-1.jpg') center center/cover no-repeat;
+      height: 60vh;
+      position: relative;
+      color: white;
+    }
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .section-title {
+      color: #dc3545;
+    }
+  </style>
+</head>
+<body>
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand text-danger fw-bold fs-3" href="#">CarServ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="btn btn-danger ms-lg-3" href="#quote">Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-about">
+  <div class="hero-overlay">
+    <div>
+      <h1 class="display-5 fw-bold">About CarServ</h1>
+      <p class="lead">Driven by Passion. Trusted for Quality.</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light text-dark">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Who We Are</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p>CarServ is a trusted name in the automotive service industry with years of experience providing reliable, affordable, and professional vehicle repair services. Our mission is to keep your vehicle running at its best with quality parts and expert care.</p>
+        <p>Our certified technicians use modern diagnostics and tools to ensure every service is completed with accuracy and satisfaction. We treat your car like it's our own — because we care.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/about-team.jpg" alt="Our Team" class="img-fluid rounded shadow" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-6">
+        <h4 class="text-danger">Our Mission</h4>
+        <p>To deliver honest and top-quality car repair services while building long-lasting relationships with our customers.</p>
+      </div>
+      <div class="col-md-6">
+        <h4 class="text-danger">Our Vision</h4>
+        <p>To become the most reliable car service center known for integrity, skill, and customer care in Pakistan and beyond.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-dark text-white text-center py-3">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 CarServ. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - CarServ</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
     .hero-section {
       background: url('carousel-bg-1.jpg') center center/cover no-repeat;
-      height: 100vh;
+      height: 50vh;
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
     }
-
-    .hero-overlay {
+    .hero-section::after {
+      content: '';
       position: absolute;
       inset: 0;
       background-color: rgba(0, 0, 0, 0.6);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
     }
-
-    .feature-card {
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      background-color: #fff;
-      transition: 0.3s ease-in-out;
-      text-align: center;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      color: #d9534f;
-      margin-bottom: 15px;
-    }
-
-    .main-section {
-      display: flex;
-      flex-wrap: wrap;
-      min-height: 400px;
-    }
-
-    .left-content, .right-form {
-      flex: 1;
-      padding: 40px;
-      position: relative;
-    }
-
-    .left-content {
-      background: url('carousel-bg-2.jpg') center/cover no-repeat;
-      color: #fff;
-    }
-
-    .left-content::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.6);
-    }
-
-    .left-content > * {
+    .hero-section h1,
+    .hero-section p {
       position: relative;
       z-index: 1;
     }
-
-    .right-form {
-      background-color: #d21c1c;
-      color: #fff;
+    .icon-box i {
+      font-size: 2rem;
+      color: #dc3545;
+      margin-bottom: 10px;
     }
-
-    .right-form input, .right-form select, .right-form textarea {
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-    }
-
-    .right-form button {
-      background-color: #0b1a3d;
-      color: #fff;
-      border: none;
-      padding: 12px;
-      width: 100%;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-
-    .about-section ul li i {
-      color: #28a745;
-    }
-      .team-img {
+    .team-img {
       height: 200px;
       object-fit: cover;
     }
@@ -123,8 +162,7 @@
   filter: brightness(1.1);
   cursor: pointer;
 }
-
-    footer {
+ footer {
       position: relative;
       background: url('carousel-bg-1.jpg') center center/cover no-repeat;
       color: #fff;
@@ -151,6 +189,7 @@
         font-size: 1.8rem;
       }
     }
+
   </style>
 </head>
 <body>
@@ -164,87 +203,76 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Hero -->
+<!-- Hero Section -->
 <section class="hero-section">
-  <div class="hero-overlay">
-    <div>
-      <h1 class="display-5 fw-bold">Your Trusted Car Repair Experts</h1>
-      <p class="lead">Fast, Affordable, and Reliable Auto Services</p>
-      <a href="#contact" class="btn btn-danger btn-lg mt-3">Request a Quote</a>
-    </div>
+  <div>
+    <h1 class="display-5 fw-bold">About Us</h1>
+    <p><a href="index.html" class="text-white text-decoration-none">Home</a> / About</p>
   </div>
 </section>
 
-<!-- Services -->
-<section id="services" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center text-danger mb-5">Our Services</h2>
+<!-- Services Highlights -->
+<section class="py-5">
+  <div class="container text-center">
     <div class="row g-4">
-      <div class="col-md-4">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-cogs"></i></div>
-          <h5>Quality Servicing</h5>
-          <p>Top-notch vehicle servicing at affordable rates.</p>
-          <a href="#" class="btn btn-danger btn-sm">Read More</a>
-        </div>
+      <div class="col-md-4 icon-box">
+        <i class="bi bi-gear-fill"></i>
+        <h5 class="fw-bold">Quality Servicing</h5>
+        <p>High-quality services delivered with precision and care.</p>
       </div>
-      <div class="col-md-4">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-users"></i></div>
-          <h5>Expert Workers</h5>
-          <p>Highly skilled and experienced mechanics.</p>
-          <a href="#" class="btn btn-danger btn-sm">Read More</a>
-        </div>
+      <div class="col-md-4 icon-box">
+        <i class="bi bi-people-fill"></i>
+        <h5 class="fw-bold">Expert Workers</h5>
+        <p>Professional mechanics with years of experience.</p>
       </div>
-      <div class="col-md-4">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-tools"></i></div>
-          <h5>Modern Equipment</h5>
-          <p>Latest tools and technologies for service.</p>
-          <a href="#" class="btn btn-danger btn-sm">Read More</a>
-        </div>
+      <div class="col-md-4 icon-box">
+        <i class="bi bi-tools"></i>
+        <h5 class="fw-bold">Modern Equipment</h5>
+        <p>We use the latest tools to ensure the best outcome.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- About -->
-<section id="about" class="py-5">
+<!-- Company Overview -->
+<section class="py-5 bg-light">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <img src="about.jpg" class="img-fluid rounded-3 shadow-lg" alt="About Us">
+      <div class="col-md-6">
+        <img src="about.jpg" class="img-fluid rounded shadow" alt="Car Repair">
       </div>
       <div class="col-md-6">
-        <span class="text-uppercase text-danger fw-semibold small">15 Years of Experience</span>
-        <h2 class="fw-bold mt-2 mb-3">CarServ Is The Best Place For Your Auto Care</h2>
-        <p class="text-muted">We are committed to delivering expert car servicing at competitive prices.</p>
-        <ul class="list-unstyled">
-          <li><i class="bi bi-check-circle-fill me-2 text-success"></i>Auto Diagnostics</li>
-          <li><i class="bi bi-check-circle-fill me-2 text-success"></i>Engine Repair & Maintenance</li>
-          <li><i class="bi bi-check-circle-fill me-2 text-success"></i>Oil & Filter Change</li>
-          <li><i class="bi bi-check-circle-fill me-2 text-success"></i>AC Repair Services</li>
+        <span class="text-danger fw-bold">15 Years of Experience</span>
+        <h2 class="fw-bold mt-2">CarServ Is The Best Place For Your Auto Care</h2>
+        <p>We are committed to delivering expert car servicing at competitive prices. Our reputation is built on trust and quality.</p>
+        <ul>
+          <li>Complete Auto Diagnostic</li>
+          <li>Engine Repair & Maintenance</li>
+          <li>Oil Change & Filter Replacement</li>
+          <li>AC Repair & Service</li>
+          <li>Brake Services</li>
         </ul>
         <a href="#" class="btn btn-danger mt-3">Read More</a>
       </div>
     </div>
   </div>
 </section>
+
 <!-- Stats Section -->
 <section class="position-relative py-5 text-white" style="background: url('carousel-bg-1.jpg') center center/cover no-repeat;">
   <!-- Black Overlay -->
   <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6); z-index: 0;"></div>
 
-<!-- Content -->
+  <!-- Content -->
   <div class="container text-center position-relative" style="z-index: 1;">
     <div class="row g-4">
       <div class="col-md-3">
@@ -270,31 +298,7 @@
     </div>
   </div>
 </section>
-<br><br>
 
-<!-- Contact / Booking -->
-<section id="contact" class="main-section">
-  <div class="left-content d-flex flex-column justify-content-center text-white">
-    <h2>Certified & Award-Winning Car Repair</h2>
-    <p>Expert diagnostics and quick services. Visit us or book online now.</p>
-  </div>
-  <div class="right-form">
-    <h2 class="mb-4">Book A Service</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <select required>
-        <option disabled selected>Select A Service</option>
-        <option>Oil Change</option>
-        <option>Brake Repair</option>
-        <option>Battery Replacement</option>
-      </select>
-      <input type="date" required />
-      <textarea placeholder="Special Request" rows="3"></textarea>
-      <button type="submit">BOOK NOW</button>
-    </form>
-  </div>
-</section>
 
 <section class="py-5" style="background: url('images/bg-team.jpg') center center/cover no-repeat;">
   <div class="container text-center text-white">
@@ -332,6 +336,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- Footer -->
 <footer class="pt-5 pb-4 text-white">
@@ -393,5 +398,11 @@
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap Icons CDN (Optional for icons) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 </html>
+
